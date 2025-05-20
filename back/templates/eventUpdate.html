@@ -1,0 +1,22 @@
+<html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .title { font-size: 18px; font-weight: bold; }
+        .footer { margin-top: 20px; font-size: 12px; color: gray; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Dear {{userName}},</p>
+        <p>The event "<b>{{eventTitle}}</b>" has been updated.</p>
+        <p><b>New Date:</b> {{eventDate}}</p>
+        <p><b>Location:</b> {{eventLocation}}</p>
+        <p><b>Description:</b> {{eventDescription}}</p>
+        <p>Please check the event details for more information.</p>
+        <p>Best regards, <br> Event Management Team</p>
+    </div>
+    <div class="footer">This is an automated message, please do not reply.</div>
+</body>
+</html>

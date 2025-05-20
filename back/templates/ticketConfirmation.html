@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #2D89EF;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .ticket {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            text-align: left;
+        }
+        .ticket h3 {
+            margin: 0;
+            color: #333;
+            font-size: 18px;
+        }
+        .ticket p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #444;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #2D89EF;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .cta-button:hover {
+            background: #2165c2;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #777;
+        }
+        .footer a {
+            color: #2D89EF;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .qr-code {
+            margin-top: 15px;
+            text-align: center;
+        }
+        .qr-code img {
+            max-width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://your-logo-url.com/logo.png" alt="Event Logo" width="80">
+        <h1>Booking Confirmation</h1>
+        <p>Hi <strong>{{name}}</strong>,</p>
+        <p>You have successfully booked <strong>{{ticketCount}}</strong> tickets for <strong>{{eventTitle}}</strong>.</p>
+        <p><strong>Date:</strong> {{eventDate}}</p>
+        <p><strong>Time:</strong> {{eventTime}}</p>
+        <p><strong>Location:</strong> {{eventLocation}}</p>
+
+        <div class="ticket">
+            <h3>Your Tickets:</h3>
+            {{ticketDetails}}
+        </div>
+
+        <div class="qr-code">
+            <p>Scan this QR code for event entry:</p>
+            <img src="{{qrCodeURL}}" alt="QR Code">
+        </div>
+
+        <a href="https://your-ems-platform.com/my-tickets" class="cta-button">View My Tickets</a>
+
+        <p class="footer">Need help? <a href="https://your-ems-platform.com/support">Visit Support</a></p>
+        <p class="footer">Best Regards,<br>Event Management Team</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+name: event_booking_app
+description: A Flutter event booking app.
+version: 1.0.0
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.1
+  http: ^1.2.2
+  jwt_decoder: ^2.0.1
+  qr_flutter: ^4.1.0
+  shared_preferences: ^2.3.0
+  flutter_secure_storage: ^9.2.2
+  intl: ^0.19.0
+  go_router: ^14.2.7
+  cached_network_image: ^3.3.1 # For loading and caching images
+  flutter_animate: ^4.5.0 # For animations
+  url_launcher: ^6.3.1
+  image_picker: ^1.1.2
+  image: ^4.5.4
+  path_provider: ^2.1.5
+  connectivity_plus: ^6.1.4  
+  flutter_inappwebview: ^6.1.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
